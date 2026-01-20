@@ -1,0 +1,25 @@
+// document.write('My name is Ariba,Sheikh Ariba Noor')
+// alert('hello world')
+console.log("My name is Ariba,Sheikh Ariba Noor")
+
+let mern_stack=10
+let laptop=1
+let attendance=80
+
+if(mern_stack>5){
+    
+    if(laptop==1){  
+
+        if(attendance>80) {
+            console.log("He can avail free mern_stack")
+        }else{
+            console.log("He can-not avail free mern_stack due to low attendance")
+        }
+        
+    }else{
+        console.log("He can-not avail free mern_stack")
+    }
+
+}else{
+    console.log("He cannot avail free mernstack course")
+}
