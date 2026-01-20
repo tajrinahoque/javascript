@@ -23,3 +23,28 @@ if(mern_stack>5){
 }else{
     console.log("He cannot avail free mernstack course")
 }
+
+var username="Ariba"
+var password="12345"
+
+var input_username="Ariba"
+var input_password="12345"
+if(username==input_username){
+    if(password==input_password){
+        console.log("Login Successful")
+    }else{
+        console.log("Incorrect Password")
+    }
+}else{
+    console.log("Incorrect Username")
+
+}
+
+
+const age=20
+
+if(age>=21){
+    console.log("You are eligible to vote")
+}else{
+    console.log("You are not eligible to vote")
+}
