@@ -48,3 +48,7 @@ if(age>=21){
 }else{
     console.log("You are not eligible to vote")
 }
+for(let i =10; i>5 ; i++ ){
+    console.log();
+    
+}
