@@ -39,16 +39,30 @@ if(username==input_username){
     console.log("Incorrect Username")
 
 }
-
-
-const age=20
-
 if(age>=21){
     console.log("You are eligible to vote")
 }else{
     console.log("You are not eligible to vote")
 }
-for(let i =10; i>5 ; i++ ){
-    console.log();
-    
+let m=Number(prompt("Enter first number"))
+let n=Number(prompt("Enter last number"))
+let reject=Number(prompt("Enter rejected number"))
+
+
+
+for (let i = m; i <= n; i++) {
+if (reject==i) {
+    console.log("This section is rejected");
+} else {
+        console.log(i+"'s","multiplication start");
+    for (let j = 1; j<=10;j++) {
+     console.log(i+"X"+j+"="+i*j );
+  
+    } if (i<n) {
+    console.log(i+"'s"+"multiplication end");
+    } else {
+      console.log("All End");
+  
+    }  
+}    
 }
