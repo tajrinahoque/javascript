@@ -39,11 +39,15 @@ if(username==input_username){
     console.log("Incorrect Username")
 
 }
+let age=18
 if(age>=21){
     console.log("You are eligible to vote")
 }else{
     console.log("You are not eligible to vote")
 }
+
+
+
 let m=Number(prompt("Enter first number"))
 let n=Number(prompt("Enter last number"))
 let reject=Number(prompt("Enter rejected number"))
@@ -51,12 +55,20 @@ let reject=Number(prompt("Enter rejected number"))
 
 
 for (let i = m; i <= n; i++) {
-if (reject==i) {
+if (i==reject) {
     console.log("This section is rejected");
 } else {
         console.log(i+"'s","multiplication start");
     for (let j = 1; j<=10;j++) {
-     console.log(i+"X"+j+"="+i*j );
+
+        if (i*j==32) {
+            console.log("This section is rejected")
+            
+        } else {
+            
+            console.log(i+"X"+j+"="+i*j );
+        
+        }
   
     } if (i<n) {
     console.log(i+"'s"+"multiplication end");
@@ -64,5 +76,26 @@ if (reject==i) {
       console.log("All End");
   
     }  
-}    
+}  
+}
+function start(n) {
+    console.log(n);
+      
+}
+start(30)
+function login(name,password) {
+    return{name: name,password :password};
+    
+    
+}
+let result=login("Ariba",12345)
+let k={
+    name:"Ariba",
+    password:12345}
+if(k.name==result.name && k.password==result.password){
+    console.log("Log in Successful")
+    
+} else {
+    console.log( "Wrong credentials");
+    
 }
