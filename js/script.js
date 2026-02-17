@@ -135,3 +135,29 @@ let ab={
 }
 
 console.log (ab.age >=21 ? ab.Salary==35000 ? ab.Hometown=="Jashore" ? ab.Education=="graduate" ? "He can marry" : "He cannot marry" : "He cannot marry" : "He cannot marry" : "He cannot marry");
+
+
+let num3=4
+switch (num3) {
+    case 1:
+        console.log("Number is odd");
+        
+    case 2:
+        console.log("Number is even");
+        
+    break;
+    case 3:
+        console.log("Number is odd");
+        
+    break;
+    case 4:
+        console.log("Number is even");
+        
+    case 5:
+        console.log("Number is odd");
+        break;
+    default:
+        console.log("Invalid Number");
+        
+        break;
+}
