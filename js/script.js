@@ -130,7 +130,8 @@ console.log(numbers);
 let ab={
     age:21,
     Salary:35000,
-    Hometown:"Jashore"
+    Hometown:"Jashore",
+    Education:"post-graduate"
 }
 
-console.log (ab.age >=21 ?ab.Salary==35000?ab.Hometown=="Jashore"?"He can marry" :"He cannot marry" :"He cannot marry" :"He cannot marry");
+console.log (ab.age >=21 ? ab.Salary==35000 ? ab.Hometown=="Jashore" ? ab.Education=="graduate" ? "He can marry" : "He cannot marry" : "He cannot marry" : "He cannot marry" : "He cannot marry");
