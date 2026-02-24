@@ -163,9 +163,8 @@
 // }
 let title=document.getElementById("title")
 let image=document.querySelector("#img-one")
-let imagetwo=document.querySelector("#img-two")
-
-
+let input=document.querySelector('input')
+let form=document.querySelector("form")
 title.addEventListener("click",function() {
     title.innerHTML="Your Neocare"
     title.style.transition=".4s"
@@ -181,16 +180,20 @@ title.style.color="white"
 title.style.fontSize="60px"
 image.addEventListener("click",function(){
     image.src="./images/change.jpg"
-
 })
-imagetwo.addEventListener("click",function addlink() {
-  let link = document.createElement("a");
-  link.href = "https://google.com";
-  link.textContent = "Visit Google";
-  link.target = "_blank"; // new tab এ খুলবে
 
-  imagetwo.appendChild(link);
+input.style.color="black"
+input.style.display="block"
+input.style.padding="20px 10px"
+input.style.fontSize="20px"
+input.style.margin="-10px auto"
+form.addEventListener("click",function(){
+    input.innerText="Your enquiry"
+    
 })
+
+
+
 
 
 
