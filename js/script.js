@@ -163,15 +163,53 @@
 // }
 let title=document.getElementById("title")
 let image=document.querySelector("#img-one")
-let input=document.querySelector('input')
-let form=document.querySelector("form")
-title.addEventListener("click",function() {
-    title.innerHTML="Your Neocare"
-    title.style.transition=".4s"
+let input=document.querySelector('.input')
+let search_btn=document.querySelector(".search_btn")
+let imgtwo=document.querySelector(".imgtwo")
+let anchor=document.querySelector("a")
+
+
+
+// =================searchbtn==============
+
+search_btn.addEventListener("click",()=>{
+
+
+    if (!input.value) {
+        console.log("Please select your item")
+        
+    } else if (!(isNaN(input.value))){
+        console.log("please select valid words");
+        
+        
+    }else{
+       imgtwo.src="./images/change.jpg"
+       imgtwo.style.width="500px"
+       anchor.style.display="none"
+       imgtwo.style.margin="0 auto"
+       image.style.width="500px"
+       i.style.width="500px"
+       
+
+
+
+
+    }
+    
+
+})
+
+
+
+// ===========bodypart================
+
+// title.addEventListener("click",function() {
+//     title.innerHTML="Your Neocare"
+//     title.style.transition=".4s"
 
     
     
-})
+// })
 
 title.style.textAlign="center"
 title.style.cursor="pointer"
@@ -179,18 +217,13 @@ title.style.background="teal"
 title.style.color="white"
 title.style.fontSize="60px"
 image.addEventListener("click",function(){
-    image.src="./images/change.jpg"
 })
 
 input.style.color="black"
-input.style.display="block"
-input.style.padding="20px 10px"
+input.style.padding="10px"
 input.style.fontSize="20px"
-input.style.margin="-10px auto"
-form.addEventListener("click",function(){
-    input.innerText="Your enquiry"
-    
-})
+
+
 
 
 
