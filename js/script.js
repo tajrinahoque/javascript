@@ -225,12 +225,44 @@
 
 
 let cardtitle=document.querySelector(".card-title")
+let dataname=document.querySelector(".dataname")
+let caption=document.querySelector(".caption")
 let allpost=document.querySelector(".allpost")
+let postbtn=document.querySelector(".postbtn")
 
-cardtitle.value=""
+let data=[]
+
+postbtn.addEventListener("click",()=>{
+
+
+    display()
+
+    data.push(dataname.value)
+
+    data.push(caption.value)
+    
+    
+})
 
 
 
+
+
+function display(){
+    data.map(item =>
+        allpost.innerHTML+=`<div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">${item.name}</h5>
+                  <p class="card-text">${item.caption}</p>
+                  <button type="button" class="btn btn-primary btone"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="button" class="btn btn-danger bttwo"><i class="fa-solid fa-trash-can"></i></button>
+        
+                </div>
+              </div>`
+
+    )
+
+}
 
 
 
