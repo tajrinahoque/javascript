@@ -2,25 +2,22 @@
     margin: 0;
     padding: 0;
 }
-/* .banner{
-    width: 500px;
-    /* height: auto; */
-    background: teal;
-    padding: 20px 0;
-    margin: 0 auto;
-}
-/* .banner img{
-    width: 100%;
-} */ */
-/* #title{
-  animation: ani .5s ease-in .02s infinite alternate;
-}
-  @keyframes ani {
-        from{
-            animation-timing-function: ease-in;
-        }to{
-            animation-timing-function: ease-out;
-
+        .search_btn,
+        .input {
+            display: inline-block;
         }
-         */
-    }
+
+        #img-one {
+            display: block;
+        }
+
+        a {
+            display: block;
+        }
+input{
+    display: block;
+    width: 100%;
+    background: #2084d1;
+    color: white;
+    font-size: 20px;
+}
