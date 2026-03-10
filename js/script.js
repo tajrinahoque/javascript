@@ -233,13 +233,13 @@ let postbtn=document.querySelector(".postbtn")
 let arr=[];
 
 postbtn.addEventListener("click",()=>{
-
-
+    
     arr.push ({
         name:dataname.value,
-        caption:caption.value
+        caption:caption.value,
         
-    }) 
+    })
+
     allpost.innerhtml=""
     display()
     dataname.value=""
@@ -259,12 +259,10 @@ function display(){
                   <p class="card-text">${item.caption}</p>
                   <button type="button" class="btn btn-primary btone"><i class="fa-solid fa-pen-to-square"></i></button>
                   <button type="button" class="btn btn-danger bttwo"><i class="fa-solid fa-trash-can"></i></button>
-        
                 </div>
               </div>`
 
     })
-
 }
 
 
