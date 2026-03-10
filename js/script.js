@@ -230,17 +230,20 @@ let caption=document.querySelector(".caption")
 let allpost=document.querySelector(".allpost")
 let postbtn=document.querySelector(".postbtn")
 
-let data=[]
+let arr=[];
 
 postbtn.addEventListener("click",()=>{
 
 
+    arr.push ({
+        name:dataname.value,
+        caption:caption.value
+        
+    }) 
+    allpost.innerhtml=""
     display()
-
-    data.push(dataname.value)
-
-    data.push(caption.value)
-    
+    dataname.value=""
+    caption.value=""
     
 })
 
@@ -249,7 +252,7 @@ postbtn.addEventListener("click",()=>{
 
 
 function display(){
-    data.map(item =>
+    arr.map(item=>{ 
         allpost.innerHTML+=`<div class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">${item.name}</h5>
@@ -260,7 +263,7 @@ function display(){
                 </div>
               </div>`
 
-    )
+    })
 
 }
 
